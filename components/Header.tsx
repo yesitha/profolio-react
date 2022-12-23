@@ -40,9 +40,7 @@ function Header({}: Props) {
         fgColor='gray' 
         bgColor='transparent'/> 
         
-        <SocialIcon url="https://twitter.com/SathsaraYesitha" target="_blank"
-        fgColor='gray' 
-        bgColor='transparent'/> 
+        
         </motion.div>
         <motion.div className='flex flex-row items-center text-grey-300'
         initial={{
@@ -59,7 +57,7 @@ function Header({}: Props) {
             duration: 1.3,
         }}
         >
-           <DarkModeSwitch className='pt-5'
+           <DarkModeSwitch className='py-3'
       
       checked={isDarkMode}
       onChange={toggleDarkMode}

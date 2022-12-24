@@ -40,7 +40,9 @@ function Header({}: Props) {
         fgColor='gray' 
         bgColor='transparent'/> 
         
-        
+        <SocialIcon url="https://twitter.com/SathsaraYesitha" target="_blank"
+        fgColor='gray' 
+        bgColor='transparent'/> 
         </motion.div>
         <motion.div className='flex flex-row items-center text-grey-300'
         initial={{

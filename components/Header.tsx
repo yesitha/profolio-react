@@ -2,9 +2,13 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-type Props = {}
+import Link from 'next/link';
+import { Social } from '../typing';
+type Props = {
+  socials:Social[];
+}
 
-function Header({}: Props) {
+function Header({socials}: Props) {
     const [isDarkMode, setDarkMode] = React.useState(false);
 
   const toggleDarkMode = (checked: boolean) => {
@@ -27,22 +31,14 @@ function Header({}: Props) {
                 duration: 1.3,
             }}
             >
-        <SocialIcon url="https://www.linkedin.com/in/yesitha-athukorala " target="_blank"
+              {socials.map((social) => (
+                <SocialIcon 
+                key={social._id}
+                url={social.url} target="_blank"
         fgColor='gray' 
         bgColor='transparent'/> 
-        <SocialIcon url="https://github.com/yesitha" target="_blank"
-        fgColor='gray' 
-        bgColor='transparent'/> 
-        <SocialIcon url="https://www.facebook.com/yesitha.sathsara.58" target="_blank"
-        fgColor='gray' 
-        bgColor='transparent'/> 
-          <SocialIcon url="https://instagram.com/yesitha_sathsara?igshid=MDM4ZDc5MmU=" target="_blank"
-        fgColor='gray' 
-        bgColor='transparent'/> 
+              ))}
         
-        <SocialIcon url="https://twitter.com/SathsaraYesitha" target="_blank"
-        fgColor='gray' 
-        bgColor='transparent'/> 
         </motion.div>
         <motion.div className='flex flex-row items-center text-grey-300'
         initial={{
@@ -64,14 +60,18 @@ function Header({}: Props) {
       checked={isDarkMode}
       onChange={toggleDarkMode}
       size={50}
-    />
-            <SocialIcon
+    /> 
+      
+      <SocialIcon
+            url='#contactME'
             className='cursor-pointer'
             network="email"
             fgColor='gray'
             bgColor='transparent'
             />
             <p className='uppercase hidden md:inline-flex text-sm  text-gray-400'>Get In Touch</p>
+    
+            
             </motion.div>   
     </header>
   )

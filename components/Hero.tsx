@@ -1,11 +1,15 @@
 import Link from 'next/link';
 import React from 'react'
 import { Cursor, Typewriter, useTypewriter } from 'react-simple-typewriter'
+import { PageInfo } from '../typing';
 import BackgroundCircles from './BackgroundCircles';
 
-type Props = {}
+type Props = {
 
-function Hero({}: Props) {
+  pageInfo:PageInfo;
+}
+
+function Hero({pageInfo}: Props) {
    
     const [text,count]=useTypewriter({words: [`ආයුබෝවන් !  Hello !  Bonjour !` ,` I'm Yesitha Sathsara Athukorala`,`<IT Major Undergraduate/>`,`An Avid Swimmer`],loop:true,delaySpeed:2000});
   return (
@@ -13,8 +17,8 @@ function Hero({}: Props) {
     <BackgroundCircles />
     <img
       className="relative rounded-full h-32 w-32 mx-auto object-cover border border-[#333333] "
-       src='https://i.postimg.cc/CKtmZNMg/Memoji-avatar.png'
-      alt=""
+       src={'https://i.postimg.cc/CKtmZNMg/Memoji-avatar.png'}
+      alt="Yesitha Sathsara Memoji"
     />
 
     <div className="z-20">

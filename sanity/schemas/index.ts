@@ -1,0 +1,9 @@
+
+import education from './education'
+import pageInfo from './pageInfo'
+import project from './project'
+import skill from './skill'
+import social from './social'
+
+
+export const schemaTypes = [pageInfo,project,skill,social,education]

@@ -43,7 +43,7 @@ export interface Project extends SanityBody{
     title: string;
     _type: "project";
     Image:Image;
-    linktoBuil:string;
+    linkToBuild:string;
     summary:string;
     technologies:Technology[];
 }

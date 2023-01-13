@@ -6,10 +6,10 @@ import BackgroundCircles from './BackgroundCircles';
 
 type Props = {
 
-  pageInfo:PageInfo;
+  
 }
 
-function Hero({pageInfo}: Props) {
+function Hero({}: Props) {
    
     const [text,count]=useTypewriter({words: [`ආයුබෝවන් !  Hello !  Bonjour !` ,` I'm Yesitha Sathsara Athukorala`,`<IT Major Undergraduate/>`,`An Avid Swimmer`],loop:true,delaySpeed:2000});
   return (

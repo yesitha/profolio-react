@@ -28,10 +28,10 @@ key={project._id}
             className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
                 
                 
-                    
+                <Link href={`${project?.linkToBuild}`} target="_blank">   
                 <motion.img
                 
-                className=' b-1 mt-28 md:mb-0  w-auto h-2/5   md:rounded-lg md:wd-auto md:h-2/5 xl:w-auto xl:h-3/5 relative max-h-[600px] pt-2'
+                className=' b-1 mt-10 xl:mt-28 md:mb-0 mb-2 w-auto h-3/6   md:rounded-lg md:wd-auto md:h-2/5 xl:w-auto xl:h-3/5 relative  pt-2 max-w-none max-h-36 xl:max-h-96'
                 initial={{y:-300,opacity:0}}
                 transition={{duration:1.2}}
                 whileInView={{y:0,opacity:1}}
@@ -39,11 +39,11 @@ key={project._id}
                 src={urlFor(project?.Image).url()}
                 
                 />
+                </Link>
                 
-                
-                <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+                <div className='space-y-2 xl:space-y-10 px-0 md:px-10 max-w-6xl'>
                 <Link href={`${project?.linkToBuild}`} target="_blank">
-                    <h4 className='text-2xl font-semibold text-center'>{project?.title}</h4>
+                    <h5 className='text-xl xl:text-2xl font-semibold text-center'>{project?.title}</h5>
                 </Link>
                     <div className='flex items-center space x-2 justify-center'>
                         {project?.technologies.map((technology)=>(
@@ -55,7 +55,7 @@ key={project._id}
 
                         ))}
                     </div>
-                    <p className='text-lg text-center md:text-left'>{project?.summary}</p>
+                    <p className='text-sm xl:text-lg text-center xl:text-left'>{project?.summary}</p>
                 </div>
             </div>
         ))}

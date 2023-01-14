@@ -16,14 +16,12 @@ function Skills({skills}: Props) {
         <h3 className='absolute top-20 uppercaset tracking-[20px] text-gray-500 text-2xl mb-10 '>SKILLS</h3>
 
        {/* <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>Hover over a skill for current profieciency</h3>*/}
-        <div className='absolute top-44 grid grid-cols-4 gap-5'>
-             {skills?.slice(0,skills.length/2).map((skill)=>(
+        <div className='absolute top-40 xl:top-44 grid grid-cols-3 xl:grid-cols-4 gap-1 xl:gap-5'>
+             {skills?.map((skill)=>(
               <Skill key={skill._id} skill={skill}/>
              ))}
 
-             {skills?.slice(skills.length/2,skills.length).map((skill)=>(
-              <Skill key={skill._id} skill={skill} directionLeft/>
-             ))}
+             
            
         </div>
     </motion.div>

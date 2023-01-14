@@ -9,7 +9,7 @@ type Props = {
 
 const EducationCard = ({education}: Props) => {
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] h-[600px]  md:w-[600px] xl:w-[900px] snap-center xl:bg-[#292929] md:bg-[#292929] p-10 py-11 hover:opacity-100 opacity-75 cursor-pointer transition-opacity duration-200 overflow-hidden' >
+    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] h-[600px]  md:w-[600px] xl:w-[700px] snap-center xl:bg-[#292929] md:bg-[#292929] px-10 mt-10 py-11 hover:opacity-100 opacity-75 cursor-pointer transition-opacity duration-200 overflow-hidden' >
         <motion.img 
         initial={{y:-100 ,opacity:0}}
         transition={{duration:1.2}}

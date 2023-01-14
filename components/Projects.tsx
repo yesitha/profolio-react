@@ -32,9 +32,9 @@ key={project._id}
                 <motion.img
                 
                 className=' b-1 mt-10 xl:mt-28 md:mb-0 mb-2 w-auto h-3/6   md:rounded-lg md:wd-auto md:h-2/5 xl:w-auto xl:h-3/5 relative  pt-10 max-w-none max-h-36 xl:max-h-96'
-                initial={{y:-300,opacity:0}}
+                initial={{opacity:0,y:-100}}
                 transition={{duration:1.2}}
-                whileInView={{y:0,opacity:1}}
+                whileInView={{opacity:1,y:0}}
                 viewport={{once:true}}
                 src={urlFor(project?.Image).url()}
                 

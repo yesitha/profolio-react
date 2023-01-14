@@ -23,14 +23,15 @@ function Projects({projects}: Props) {
         {projects.map((project)=>(
             
             
-            <div key={project._id}
+            <div 
+key={project._id}
             className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-                <Link href={`${project?.linkToBuild}`} target="_blank">
+                
                 
                     
                 <motion.img
                 
-                className='b-1 mt-28 md:mb-0  w-auto h-2/5   md:rounded-lg md:wd-auto md:h-2/5 xl:w-auto xl:h-4/5 relative max-h-[600px]'
+                className=' b-1 mt-28 md:mb-0  w-auto h-2/5   md:rounded-lg md:wd-auto md:h-2/5 xl:w-auto xl:h-3/5 relative max-h-[600px] pt-2'
                 initial={{y:-300,opacity:0}}
                 transition={{duration:1.2}}
                 whileInView={{y:0,opacity:1}}
@@ -39,9 +40,11 @@ function Projects({projects}: Props) {
                 
                 />
                 
-                </Link>
+                
                 <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+                <Link href={`${project?.linkToBuild}`} target="_blank">
                     <h4 className='text-2xl font-semibold text-center'>{project?.title}</h4>
+                </Link>
                     <div className='flex items-center space x-2 justify-center'>
                         {project?.technologies.map((technology)=>(
                             <img

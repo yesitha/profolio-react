@@ -13,10 +13,10 @@ function Skill({skill}: Props) {
     <div className='group relative flex hover:opacity-100 opacity-80 transition-opacity duration-200 '>
         <motion.img
           initial={{
-            x: -200,
+            
             opacity:0}}
             transition={{duration:1}}
-            whileInView={{opacity:1,x:0}}
+            whileInView={{opacity:1}}
             src={urlFor(skill?.Image).url()}
             className='rounded-full border-gray-500 object-cover w-24 h-24  md:h-28 md:w-28 xl:w-32 xl:h-32 filter  '
         />

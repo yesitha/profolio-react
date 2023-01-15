@@ -55,12 +55,12 @@ function Header({socials}: Props) {
             duration: 1.3,
         }}
         >
-           <DarkModeSwitch className='py-3'
+          {/* <DarkModeSwitch className='py-3'
       
       checked={isDarkMode}
       onChange={toggleDarkMode}
       size={50}
-    /> 
+    /> */}
       
       <SocialIcon
             url='#contactME'

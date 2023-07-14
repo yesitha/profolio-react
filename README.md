@@ -1,8 +1,8 @@
 # Portfolio Website
 
-Welcome to my portfolio website GitHub repository! This website was built using [React](https://reactjs.org/), [Next.js](https://nextjs.org/) and [Sanity](https://www.sanity.io/) as the backend, [Tailwind CSS](https://tailwindcss.com/) for styling and [Framer Motion](https://www.framer.com/motion/) for animations. Deployment was done using [Vercel](https://vercel.com/) and the website is live on [yesithasathsara.dev](https://yesithasathsara.dev).
+Welcome to my portfolio website GitHub repository! This website was built using [React](https://reactjs.org/), [Next.js](https://nextjs.org/) and [Sanity](https://www.sanity.io/) as the backend, [Tailwind CSS](https://tailwindcss.com/) for styling and [Framer Motion](https://www.framer.com/motion/) for animations. Deployment was done using [Vercel](https://vercel.com/) and the website is live on [yesithasathsara.app](https://yesithasathsara.app).
 
-> [Click Here to Live Preview](https://yesithasathsara.dev) 
+> [Click Here to Live Preview](https://yesithasathsara.app) 
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ To get started with this repository, you'll need to have [Node.js](https://nodej
 
 ## Deployment
 
-This website was deployed using [Vercel](https://vercel.com/) and is live on [yesithasathsara.dev](https://yesithasathsara.dev/). If you want to deploy it to your own domain, you can follow the instructions provided by Vercel to connect your GitHub repository and deploy the website.
+This website was deployed using [Vercel](https://vercel.com/) and is live on [yesithasathsara.app](https://yesithasathsara.app/). If you want to deploy it to your own domain, you can follow the instructions provided by Vercel to connect your GitHub repository and deploy the website.
 
 ## Built With
 

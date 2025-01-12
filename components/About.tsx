@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
 import React, { PureComponent } from 'react'
+import { PageInfo } from '../typing'
 
-type Props = {}
+type Props = {
+  
+}
 
 class About extends PureComponent<Props> {
   render() {
@@ -28,7 +31,7 @@ class About extends PureComponent<Props> {
         />
         <div className='space-y-2 md:space-y-10 px-0  md:px-10'>
             <h4 className='hidden md:inline-flex md:text-4xl md:font-semibold'>Get to Know Me</h4>
-            <p className='text-base justify-center '>I am Yesitha, a 24-year-old undergraduate at the University of Moratuwa in Sri Lanka. I am currently pursuing a BCS(Hons) in Information Technology and am dedicated to continuously improving my skills and knowledge in the field.I enjoy taking on challenges and achieving my goals. I am particularly interested in the opportunity to learn new technologies and find solutions in the field of IT. In my free time, I enjoy swimming and am passionate about finding solutions in the field of IT.</p>
+            <p className='text-base justify-center '>I am Yesitha, a 25-year-old undergraduate at the University of Moratuwa in Sri Lanka. I am currently pursuing a BCS(Hons) in Information Technology and am dedicated to continuously improving my skills and knowledge in the field.I enjoy taking on challenges and achieving my goals. I am particularly interested in the opportunity to learn new technologies and find solutions in the field of IT. In my free time, I enjoy swimming and am passionate about finding solutions in the field of IT.</p>
         </div>
         </motion.div>
     )

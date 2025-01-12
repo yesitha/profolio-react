@@ -8,6 +8,22 @@ type Props = {
 }
 
 function Education({educations}: Props) {
+
+  const preferredOrder = [
+    "University of Moratuwa",
+    "University of Colombo",
+    "IJSE - Institute of Software Engineering",
+    "Taxila Central College - Horana",
+  ]
+
+  const sortedEducations = educations.sort((a, b) => {
+    const orderA = preferredOrder.indexOf(a?.institute)
+    const orderB = preferredOrder.indexOf(b?.institute)
+
+    
+    return (orderA === -1 ? Infinity : orderA) - (orderB === -1 ? Infinity : orderB)
+  })
+
   return (
     <motion.div 
     initial={{opacity:0}}

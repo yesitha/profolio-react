@@ -15,7 +15,7 @@ type props = {};
 function ContactMe({}: props) {
     const { register, handleSubmit } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = formData => {
-window.location.href=`mailto:yesithaathukorala@gmail.com?subject=${formData.subject}&body=Hi,My Name is ${formData.name}.${formData.message}(${formData.email})`
+window.location.href=`mailto:yesithasathsaraa@gmail.com?subject=${formData.subject}&body=Hi,My Name is ${formData.name}.${formData.message}(${formData.email})`
 
     }
   return (
@@ -33,7 +33,7 @@ window.location.href=`mailto:yesithaathukorala@gmail.com?subject=${formData.subj
 </div>
 <div className='flex items-center space-x-5  xl:pl-0 md:pl-0'>
     <EnvelopeIcon className='text-[#f7AB0A] h-7 w-7 animate-pulse'/>
-    <p>yesithaathukorala@gmail.com</p>
+    <p>yesithasathsaraa@gmail.com</p>
 </div>
 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2  xl:mx-auto md:mx-auto'>
     <div className='flex flex-col xl:flex-row xl:space-x-2 space-y-2 xl:space-y-0 md:space-y-0 md:flex-row md:space-x-2 ' >

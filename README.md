@@ -1,8 +1,8 @@
 # Portfolio Website
 
-Welcome to my portfolio website GitHub repository! This website was built using [React](https://reactjs.org/), [Next.js](https://nextjs.org/) and [Sanity](https://www.sanity.io/) as the backend, [Tailwind CSS](https://tailwindcss.com/) for styling and [Framer Motion](https://www.framer.com/motion/) for animations. Deployment was done using [Vercel](https://vercel.com/) and the website is live on [https://profolio-final-no12rm51u-yesitha.vercel.app/](https://profolio-final-no12rm51u-yesitha.vercel.app/).
+Welcome to my portfolio website GitHub repository! This website was built using [React](https://reactjs.org/), [Next.js](https://nextjs.org/) and [Sanity](https://www.sanity.io/) as the backend, [Tailwind CSS](https://tailwindcss.com/) for styling and [Framer Motion](https://www.framer.com/motion/) for animations. Deployment was done using [Vercel](https://vercel.com/) and the website is live on [https://yesithasathsara.me](https://yesithasathsara.me).
 
-> [Click Here to Live Preview](https://profolio-final-no12rm51u-yesitha.vercel.app/) 
+> [Click Here to Live Preview](https://yesithasathsara.me) 
 
 ## Getting Started
 

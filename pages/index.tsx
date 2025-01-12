@@ -35,7 +35,7 @@ return (
         <meta name="author" content="Yesitha Sathsara Athukorala"/>
         <meta name="publisher" content="Yesitha Sathsara Athukorala"/>
         <meta name="copyright" content="Yesitha Sathsara Athukorala"/>
-        <meta name="description" content="I am Yesitha Sathsara Athukorala, a 24-year-old undergraduate at the University of Moratuwa in Sri Lanka. I am currently pursuing a BCS(Hons) in Information Technology and am dedicated to continuously improving my skills and knowledge in the field.I enjoy taking on challenges and achieving my goals. I am particularly interested in the opportunity to learn new technologies and find solutions in the field of IT. In my free time, I enjoy swimming and am passionate about finding solutions in the field of IT."/>
+        <meta name="description" content="I am Yesitha Sathsara Athukorala, a 25-year-old undergraduate at the University of Moratuwa in Sri Lanka. I am currently pursuing a BCS(Hons) in Information Technology and am dedicated to continuously improving my skills and knowledge in the field.I enjoy taking on challenges and achieving my goals. I am particularly interested in the opportunity to learn new technologies and find solutions in the field of IT. In my free time, I enjoy swimming and am passionate about finding solutions in the field of IT."/>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>

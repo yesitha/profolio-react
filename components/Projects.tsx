@@ -12,6 +12,33 @@ type Props = {
 }
 
 function Projects({projects}: Props) {
+
+    const customOrder = ["Microservices-based", "Online", "Procurement","SmartHomeX","Smart","ICT","ITQA"]; 
+
+    const sortedProjects = [...projects].sort((a, b) => {
+        // Ensure the title exists
+        const titleA = a?.title ?? "";
+        const titleB = b?.title ?? "";
+    
+        // Extract the first word safely
+        const firstWordA = titleA.trim().split(/\s+/)[0]; // Handles multiple spaces
+        const firstWordB = titleB.trim().split(/\s+/)[0];
+    
+        const indexA = customOrder.indexOf(firstWordA);
+        const indexB = customOrder.indexOf(firstWordB);
+    
+        // If both are in the custom order, compare their indices
+        if (indexA !== -1 && indexB !== -1) {
+            return indexA - indexB;
+        }
+    
+        // If one is in the custom order, keep it before the others
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+    
+        // If neither are in the custom order, sort alphabetically (case insensitive)
+        return titleA.localeCompare(titleB, "en", { sensitivity: "base" });
+    });
    
    
 
@@ -27,7 +54,7 @@ function Projects({projects}: Props) {
     
         <h3 className='absolute top-20 uppercaset tracking-[20px] text-gray-500 text-2xl mb-10 '>PROJECTS</h3>
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scroll-smooth sm:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFE55C]/60 '>
-        {projects.map((project)=>(
+        {sortedProjects.map((project)=>(
             
             
             <div 

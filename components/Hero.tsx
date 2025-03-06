@@ -11,7 +11,7 @@ type Props = {
 
 function Hero({}: Props) {
    
-    const [text,count]=useTypewriter({words: [`ආයුබෝවන් !  Hello !  Bonjour !` ,` I'm Yesitha Sathsara Athukorala`,`<IT Major Undergraduate/>`,`An Avid Swimmer`],loop:true,delaySpeed:2000});
+    const [text,count]=useTypewriter({words: [`ආයුබෝවන් !  Hello !  Bonjour !` ,` I'm Yesitha Sathsara Athukorala`,`Final Year Undergraduate`,`<Full-Stack Developer/>`,`DevOps Enthusiast !`,`An Avid Swimmer`],loop:true,delaySpeed:2000});
   return (
     <div className="h-screen flex flex-col space-y-8 md:space-y-0 items-center justify-center text-center overflow-hidden">
     <BackgroundCircles />

@@ -18,7 +18,7 @@ function Skill({skill}: Props) {
             transition={{duration:1}}
             whileInView={{opacity:1}}
             src={urlFor(skill?.Image).url()}
-            className=' border-gray-500 object-cover w-20 h-20  md:h-28 md:w-28 xl:w-30 xl:h-30 filter ml-2 mr-2 '
+            className=' border-gray-500 object-cover w-16 h-16  md:h-28 md:w-28 xl:w-28 xl:h-28 filter ml-2 mr-2 mt-0.5 mb-0.5'
         />
         {/*<div className='absolute opacity-0  transition duration-300 ease-in-out  h-24 w-24  md:h-28 md:w-28 xl:h-32 xl:w-32 rounded-full z-0'>
             <div className='flex items-center justify-center h-full '>

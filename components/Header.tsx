@@ -25,7 +25,7 @@ function Header({socials}: Props) {
             animate={{
                 x: 0,
                 opacity: 1,
-                scale: 1
+                scale: 0.9
             }}
             transition={{
                 duration: 1.3,

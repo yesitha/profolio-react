@@ -21,6 +21,7 @@
     "@types/react-dom": "18.0.9",
     "eslint": "8.29.0",
     "framer-motion": "^7.10.2",
+    "lucide-react": "^0.477.0",
     "next": "13.0.7",
     "next-sanity": "^4.0.4",
     "next-themes": "^0.2.1",

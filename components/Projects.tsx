@@ -3,12 +3,19 @@ import {motion} from 'framer-motion'
 import { Project } from '../typing';
 import { urlFor } from '../sanity';
 import Link from 'next/link';
+import { Github } from "lucide-react";
+import { ChevronsRight } from "lucide-react";
+import { useState, useEffect,useRef } from "react";
 
 type Props = {
     projects:Project[];
 }
 
 function Projects({projects}: Props) {
+   
+   
+
+   
     
   return (
     <motion.div
@@ -56,6 +63,17 @@ key={project._id}
                         ))}
                     </div>
                     <p className='text-sm xl:text-lg text-center xl:text-left'>{project?.summary}</p>
+                    <Link href={`${project?.linkToBuild}`} target="_blank">
+                <div className='flex items-center justify-center space-x-2 pt-5'>
+                    <button 
+                        className="flex items-center space-x-2 px-2 md:px-4 py-2 border border-[#FFE55C]/40 rounded-full uppercase text-xs tracking-widest text-[#FFE55C]/40 transition-all md:border-[#242424] md:text-gray-500 md:hover:border-[#FFE55C]/40 md:hover:text-[#FFE55C]/40 xl:mx-2"
+                    >
+                        <Github className="w-4 h-4 md:w-5 md:h-5 transition-all" />
+                        <span>GitHub Repo</span>
+                    </button>
+                </div>
+            </Link>
+                    
                 </div>
             </div>
         ))}
@@ -63,6 +81,9 @@ key={project._id}
         <div className='w-full absolute top-[30%] bg-[#f7AB0A]/10 left-0 h-[350px] skew-y-12'>
 
         </div>
+       
+        
+            
     </motion.div>
   )
 }

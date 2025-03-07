@@ -6,6 +6,12 @@ import Link from 'next/link';
 import { Github } from "lucide-react";
 import { ChevronsRight } from "lucide-react";
 import { useState, useEffect,useRef } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, EffectCreative } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 type Props = {
     projects:Project[];
@@ -49,17 +55,30 @@ function Projects({projects}: Props) {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1.5 }}
-    className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+    className="h-screen relative flex  flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
   >
     
         <h3 className='absolute top-20 uppercaset tracking-[20px] text-gray-500 text-2xl mb-10 '>PROJECTS</h3>
-        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scroll-smooth sm:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFE55C]/60 '>
+        {/* <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scroll-smooth sm:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFE55C]/60 '> */}
+    
+        <Swiper className='w-full'
+      modules={[Navigation, Pagination,  A11y]}
+      spaceBetween={2}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true } }
+      
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+      
+      
+    >
         {sortedProjects.map((project)=>(
             
-            
+            <SwiperSlide    key={project._id} >
             <div 
-key={project._id}
-            className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+         
+            className='min-w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
                 
                 
                  
@@ -103,8 +122,9 @@ key={project._id}
                     
                 </div>
             </div>
+            </SwiperSlide>
         ))}
-        </div>
+        </Swiper>  
         <div className='w-full absolute top-[30%] bg-[#f7AB0A]/10 left-0 h-[350px] skew-y-12'>
 
         </div>

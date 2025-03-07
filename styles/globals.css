@@ -53,5 +53,29 @@
   .contactInput{
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6  py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f7AB0A]/40 focus:text-[#f7AB0A]/40 hover:border-[#f7ABBA]/40
   }
+
+  
     
+}
+
+/* Change Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #FFE55C !important; /* Change this to your theme color */
+}
+
+/* Change Swiper Pagination Dots */
+.swiper-pagination-bullet {
+  background: #FFE55C !important; /* Change to theme color */
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFD700 !important; /* Change active dot color */
+  opacity: 1;
+}
+
+/* Change Swiper Scrollbar */
+.swiper-scrollbar-drag {
+  background: #FFE55C !important; /* Change scrollbar color */
 }

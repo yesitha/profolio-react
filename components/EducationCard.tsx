@@ -13,7 +13,7 @@ type Props = {
 const EducationCard = ({education}: Props) => {
   return (
     <article className='flex flex-col rounded-lg items-center space-y-5 mt-10
-  flex-shrink-0 w-[340px] h-[600px] xl:h-[700px] md:w-[400px] xl:w-[500px] 
+  flex-shrink-0 w-[340px] h-[500px] xl:h-[700px] md:w-[400px] xl:w-[500px] 
   snap-center  px-10 py-6 mt-6 
   hover:opacity-100 opacity-75 cursor-pointer transition-opacity duration-200 
   overflow-hidden' >

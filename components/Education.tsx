@@ -45,8 +45,7 @@ function Education({educations}: Props) {
   slidesPerView={1}  // Start with 1 slide per view for small screens
   navigation
   pagination={{ clickable: true }}
-  onSwiper={(swiper) => console.log(swiper)}
-  onSlideChange={() => console.log('slide change')}
+  
   
   breakpoints={{
     640: { slidesPerView: 1 }, // Mobile

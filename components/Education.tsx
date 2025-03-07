@@ -36,7 +36,7 @@ function Education({educations}: Props) {
     whileInView={{opacity:1}}
     transition={{duration:1.5}}
     className='flex flex-col relative h-screen overflow-hidden  text-left md:flex-row max-w-full mx-10 justify-evenly mx-auto items-center '>
-  <h3 className='absolute top-20 uppercaset tracking-[18px] xl:tracking-[20px] text-gray-500 text-2xl mb-10 z-10 ml-5 '>EDUCATION</h3>
+  <h3 className='absolute top-20 uppercaset left-1/2 -translate-x-1/2 tracking-[18px] xl:tracking-[20px] text-gray-500 text-2xl mb-10 z-10  '>EDUCATION</h3>
   {/* <div className='xl:w-5/6 w-full  flex space-x-5 overflow-x-scroll px-10 snap-x snap-mandatory scrollbar-thin scroll-smooth sm:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFE55C]/60 pb-5 z-5'> */}
   <Swiper 
   className="xl:w-5/6 w-full pb-5"

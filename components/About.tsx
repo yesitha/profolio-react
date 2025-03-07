@@ -14,7 +14,7 @@ class About extends PureComponent<Props> {
       whileInView={{opacity:1}}
       transition={{duration:1.5}}
       >
-        <h3 className='absolute top-20 uppercaset tracking-[20px] text-gray-500 text-2xl mb-10'>ABOUT</h3>
+        <h3 className='absolute top-20 left-1/2 -translate-x-1/2 uppercaset tracking-[20px] text-gray-500 text-2xl mb-10 '>ABOUT</h3>
         <motion.img
         src="https://i.postimg.cc/Sxm90sS3/website-about-avatar.jpg"
         initial={{
